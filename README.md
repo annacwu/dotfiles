@@ -14,3 +14,7 @@
 ## polybar:
 - status bar of choice to work with i3
 - missing one of the files for it because it goes in /etc
+
+## zsh:
+- shell of choice
+- needed zsh to make ssh keys save with i3 i can't explain why
