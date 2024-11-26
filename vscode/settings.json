@@ -3,6 +3,14 @@
     "security.workspace.trust.untrustedFiles": "open",
     "files.autoSave": "onFocusChange",
     "vim.enableNeovim": true,
+    "vim.handleKeys": {
+        "j": true,
+        "k": true, 
+        "l": true, 
+        ";": true, 
+        "<C-j>": true, 
+        "<C-;>": true, 
+    },
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": ["j"],
@@ -19,12 +27,50 @@
         {
             "before": [";"],
             "after": ["<Right>"]
-        },  
+        }, 
+        {
+            "before": ["L"],
+            "after": ["<C-y>"]
+        },
+        {
+            "before": ["K"],
+            "after": ["<C-e>"]
+        },
+        {
+            "before": ["<C-w>", "j"],
+            "after": ["<C-w>", "h"]
+        },
+        {
+            "before": ["<C-w>", "k"],
+            "after": ["<C-w>", "j"]
+        },
+        {
+            "before": ["<C-w>", "l"],
+            "after": ["<C-w>", "k"]
+        },
+        {
+            "before": ["<C-w>", ";"],
+            "after": ["<C-w>", "l"]
+        },
     ],
     "vim.insertModeKeyBindings": [
         {
             "before": ["f", "j"],
             "after": ["<ESC>"]
         }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<space>", "h"],
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        {
+            "before": ["<space>", "v"],
+            "commands": ["workbench.action.splitEditorRight"]
+        },
+        {
+            "before": ["<space>", "f", "b"],
+            "commands": ["workbench.view.explorer"]
+        }       
     ]
 }
