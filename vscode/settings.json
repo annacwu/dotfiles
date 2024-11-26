@@ -1,0 +1,30 @@
+{
+    "workbench.colorTheme": "Kimbie Dark",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "onFocusChange",
+    "vim.enableNeovim": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["<Left>"]
+        }, 
+        {
+            "before": ["l"],
+            "after": ["<Up>"]
+        },
+        {
+            "before": ["k"],
+            "after": ["<Down>"]
+        },
+        {
+            "before": [";"],
+            "after": ["<Right>"]
+        },  
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["f", "j"],
+            "after": ["<ESC>"]
+        }
+    ]
+}
